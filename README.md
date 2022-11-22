@@ -10,7 +10,6 @@ I used the Raylib-rs library and CLion with the Rust extension.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Raylib Discord](https://discord.com/invite/raylib)
 * [Raylib-rs GitHub](https://github.com/deltaphc/raylib-rs)
 * [Raylib Rust Documentation](https://docs.rs/raylib/latest/raylib/)
