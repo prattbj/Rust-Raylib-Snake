@@ -109,8 +109,15 @@ fn main()
     let mut dead: bool = false;
     //Game loop
     while !rl.window_should_close() {
-        //Get a new current velocity
-        current_velocity = velocity(current_velocity, &mut rl);
+        //Get a new velocity
+        let new_velocity = velocity(current_velocity, &mut rl);
+        //Make sure the new velocity is not the reverse of the old velocity
+        //so that the snake isn't able to go directly backwards, ending the game
+        if current_velocity.x != -new_velocity.x ||  current_velocity.y != -new_velocity.y
+        {
+            current_velocity = new_velocity;
+        }
+
 
         //Check if the snake's head is colliding with the apple
         if snake.get_head().x == apple.pos.x && snake.get_head().y == apple.pos.y
@@ -142,6 +149,7 @@ fn main()
         {
             current_velocity = Vector2::new(0.0, 0.0);
         }
+
         //Move the snake's head and tail
         snake.move_snake(current_velocity);
 
