@@ -2,9 +2,6 @@
 
 I wanted to learn Rust since it is suppsoed to be a memory-safe alternative to C++. To do this, I made the snake game.
 
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
-
 [Software Demo Video](https://youtu.be/uprqviWrn4w)
 
 # Development Environment
